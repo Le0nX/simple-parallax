@@ -1,7 +1,7 @@
 # simple-parallax
 Demo app for demonstrating parallax effect
 
-[](parallax.gif)
+![](parallax.gif)
 
 ## What has been studied while developing this App?
 * **UIInterpolatingMotionEffect** for parallax effect
