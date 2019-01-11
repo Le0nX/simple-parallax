@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Table View Controller-->
+        <scene sceneID="LiY-fT-flt">
+            <objects>
+                <tableViewController id="c9R-Dz-bgc" customClass="ListTableViewController" customModule="simple_paralax" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JU6-Wn-X6g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="h33-4Z-yuj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h33-4Z-yuj" id="XCR-7s-q0K">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-569995" translatesAutoresizingMaskIntoConstraints="NO" id="FUb-6e-5qn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ad-FG-wq5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.30233304794520549" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="50"/>
+                                            <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="9ad-FG-wq5" secondAttribute="trailing" id="2SE-fP-H5k"/>
+                                        <constraint firstItem="9ad-FG-wq5" firstAttribute="top" secondItem="XCR-7s-q0K" secondAttribute="top" id="DaX-ml-scX"/>
+                                        <constraint firstItem="9ad-FG-wq5" firstAttribute="leading" secondItem="XCR-7s-q0K" secondAttribute="leading" id="Oco-pR-iFa"/>
+                                        <constraint firstAttribute="trailing" secondItem="FUb-6e-5qn" secondAttribute="trailing" id="Pn2-ZW-e7b"/>
+                                        <constraint firstItem="FUb-6e-5qn" firstAttribute="top" secondItem="XCR-7s-q0K" secondAttribute="top" id="Sm1-Fw-gvL"/>
+                                        <constraint firstItem="FUb-6e-5qn" firstAttribute="leading" secondItem="XCR-7s-q0K" secondAttribute="leading" id="SnO-yA-5sS"/>
+                                        <constraint firstAttribute="bottom" secondItem="FUb-6e-5qn" secondAttribute="bottom" id="afr-jp-duF"/>
+                                        <constraint firstAttribute="bottom" secondItem="9ad-FG-wq5" secondAttribute="bottom" id="ggU-Dw-O8V"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c9R-Dz-bgc" id="2k7-YU-knB"/>
+                            <outlet property="delegate" destination="c9R-Dz-bgc" id="dj9-P9-rYC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PC4-8s-koU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="-4.0479760119940034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pexels-photo-569995" width="1080" height="720"/>
+    </resources>
+</document>
